@@ -17,21 +17,9 @@
 ## 🚀 About Me
 
 - 💻 I build software across **frontend, backend, and systems-level projects**
-- 🏢 Founder of **[Arcanet Consulting](https://arcanettechnology.com)** — I help teams design, build, and ship software that lasts
+- 🏢 Founder of **[Arcanet Consulting](https://arcanettechnology.com)** — hands-on engineering help for startups and small teams, from architecture to shipping
 - 🤖 I’m especially interested in **autonomous/intelligent browser workflows**
 - 🎯 Current focus: **shipping impactful projects and improving software craftsmanship**
-
----
-
-## 🏢 Arcanet Consulting
-
-<a href="https://arcanettechnology.com">
-  <img src="assets/screenshots/arcanet.jpg" width="640" alt="Arcanet Consulting homepage — We help teams build software that actually ships" />
-</a>
-
-**[arcanettechnology.com](https://arcanettechnology.com)** — my software engineering & technology consulting firm. Arcanet partners with startups and established companies to design, build, and modernize software — working directly with founders and engineering leaders, no hand-offs.
-
-**What we do:** custom software (web apps, APIs, internal tools) · cloud & infrastructure (AWS, GCP, Azure, Cloudflare) · technical strategy & architecture reviews · product delivery from MVP to launch · reliability & automation · fractional engineering leadership.
 
 ---
 
@@ -56,6 +44,24 @@
 ---
 
 ## 🌟 Featured Projects
+
+### 🏢 Arcanet Consulting
+**Site:** [arcanettechnology.com](https://arcanettechnology.com)
+
+<a href="https://arcanettechnology.com">
+  <img src="assets/screenshots/arcanet.jpg" width="640" alt="Arcanet Consulting homepage — hands-on software engineering & technology consulting" />
+</a>
+
+My software engineering & technology consulting practice. I work directly with founders and small teams — hands-on, no hand-offs — to design, build, and modernize software, from architecture and cloud setup through shipping the actual product. The pitch is how I work: direct, honest scoping, and shipping without cutting the corners that come back later.
+
+- **Custom software** — web apps, APIs, and internal tools built to be maintainable
+- **Cloud & infrastructure** — architecture, migrations, and CI/CD on AWS, GCP, Azure, and Cloudflare
+- **Technical strategy** — system design, code and architecture reviews, and honest build-vs-buy advice
+- **Product delivery** — scoping, prioritizing, and shipping from MVP to launch
+
+**Engagements:** project-based or ongoing · work directly with the person doing the work
+
+---
 
 ### 🤖 Intelligent Browser Agents
 **Repo:** [Caleby03/Intelligent-Browser-Agents](https://github.com/Caleby03/Intelligent-Browser-Agents) · UCF Senior Design (Team L07)
