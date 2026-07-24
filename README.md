@@ -1,13 +1,14 @@
 <div align="center">
 
 # Hi, I'm Caleb 👋  
-### Full-Stack Developer | Intelligent Systems | Product-Focused Builder
+### Full-Stack Developer | Founder @ Arcanet Consulting | Product-Focused Builder
 
 <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&duration=2600&pause=850&color=3B82F6&center=true&vCenter=true&width=900&lines=Building+clean%2C+scalable+web+applications;Exploring+autonomous+browser+agents;Turning+ideas+into+real+software" alt="Typing SVG" />
 
 <br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Caleby03-181717?style=for-the-badge&logo=github)](https://github.com/Caleby03)
+[![Arcanet](https://img.shields.io/badge/Website-arcanettechnology.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://arcanettechnology.com)
 
 </div>
 
@@ -16,9 +17,21 @@
 ## 🚀 About Me
 
 - 💻 I build software across **frontend, backend, and systems-level projects**
+- 🏢 Founder of **[Arcanet Consulting](https://arcanettechnology.com)** — I help teams design, build, and ship software that lasts
 - 🤖 I’m especially interested in **autonomous/intelligent browser workflows**
-- 📚 I enjoy turning project ideas into polished, working products
 - 🎯 Current focus: **shipping impactful projects and improving software craftsmanship**
+
+---
+
+## 🏢 Arcanet Consulting
+
+<a href="https://arcanettechnology.com">
+  <img src="assets/screenshots/arcanet.jpg" width="640" alt="Arcanet Consulting homepage — We help teams build software that actually ships" />
+</a>
+
+**[arcanettechnology.com](https://arcanettechnology.com)** — my software engineering & technology consulting firm. Arcanet partners with startups and established companies to design, build, and modernize software — working directly with founders and engineering leaders, no hand-offs.
+
+**What we do:** custom software (web apps, APIs, internal tools) · cloud & infrastructure (AWS, GCP, Azure, Cloudflare) · technical strategy & architecture reviews · product delivery from MVP to launch · reliability & automation · fractional engineering leadership.
 
 ---
 
@@ -30,7 +43,7 @@
 <img src="https://skillicons.dev/icons?i=python,ts,js,html,css,php,c" />
 
 ### Frameworks & Runtime
-<img src="https://skillicons.dev/icons?i=react,nodejs,express,nextjs" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,fastapi,tailwind" />
 
 ### Cloud, Deployment & Data
 <img src="https://skillicons.dev/icons?i=cloudflare,vercel,aws,gcp,supabase,mysql,mongodb" />
@@ -45,23 +58,53 @@
 ## 🌟 Featured Projects
 
 ### 🤖 Intelligent Browser Agents
-**Repo:** [Caleby03/Intelligent-Browser-Agents](https://github.com/Caleby03/Intelligent-Browser-Agents)  
-This senior design project focuses on autonomous agents that browse and scrape the web to automate repetitive browser tasks.
+**Repo:** [Caleby03/Intelligent-Browser-Agents](https://github.com/Caleby03/Intelligent-Browser-Agents) · UCF Senior Design (Team L07)
 
-**Demo Video:** [Watch on YouTube](https://youtu.be/CmKoODnEdDQ?si=L1nCML-f8zLrPcDL)  
-**UCF Senior Design Showcase:** [View Project Page](https://www.cecs.ucf.edu/SeniorDesignShowcase/team/intelligent-browser-agents/)
+<img src="assets/screenshots/intelligent-browser-agents.png" width="640" alt="Intelligent Browser Agents — Live Agent View streaming a browser session in real time while the agent reasons through a task" />
+
+A platform that turns natural-language instructions into real actions performed on a live browser session. Users delegate repetitive digital chores — filling forms, navigating dashboards, downloading files — to an agent that reads the page, plans, and executes visually and safely, with the whole run streamed back to the UI in real time.
+
+- **LLM-driven agent runtime** built on **LangGraph** — an orchestrator → executor → verifier → fallback/interaction loop
+- **Playwright** browser automation with ARIA-oriented DOM extraction and a modular action layer (navigate, click, type, search, scroll, press_key, wait, extract_content)
+- **Human-in-the-loop (HITL):** the agent pauses to ask for clarifications, approvals, or credentials mid-run
+- Live browser frames, logs, and agent reasoning streamed to the frontend over **WebSockets**
+- Full account system + encrypted storage of reusable credentials and profile data for automation contexts
+
+**Stack:** React + Vite · FastAPI · LangGraph · Playwright · PostgreSQL · WebSockets · AWS (LightSail/EC2)
+
+**Demo Video:** [Watch on YouTube](https://youtu.be/CmKoODnEdDQ?si=L1nCML-f8zLrPcDL) · **Showcase:** [UCF Senior Design page](https://www.cecs.ucf.edu/SeniorDesignShowcase/team/intelligent-browser-agents/)
 
 ---
 
-### 🏠 Harmony House Web App
-**Repo:** `Caleby03/HarmonyHouseWebapp`  
-A TypeScript-heavy full-stack web app that combines modern frontend workflows with Python-backed logic.
+### 🏠 Harmony House NC
+**Repo:** `Caleby03/HarmonyHouseWebapp` *(private)*
+
+<img src="assets/screenshots/harmony-house.jpg" width="640" alt="Harmony House NC landing page — a mountain retreat booking site with a live availability search" />
+
+A direct-booking and calendar-sync platform for **Harmony House NC**, a short-term rental in the Blue Ridge Mountains of North Carolina catering to wedding parties and equestrian guests. Guests book directly on the property's own site instead of paying platform fees on Airbnb or Vrbo.
+
+- **Live availability calendar** with direct date selection and instant booking
+- **Square** Web Payments for checkout; **Resend** for confirmation and cancellation emails
+- **Automatic calendar sync** — a **GitHub Actions** cron ingests Airbnb & Vrbo iCal feeds every 15 minutes so availability is always accurate
+- **Host portal** (`/portal`): reservation list, platform-color-coded calendar, revenue & occupancy metrics, property editor, and date blocking
+
+**Stack:** Next.js 16 · React 19 · Tailwind v4 · FastAPI · SQLModel · PostgreSQL · Square · Resend · Railway
 
 ---
 
-### 📈 FOMO-NOMO Web
-**Repo:** `FOMO-NOMO/FOMO-NOMO-WEB`  
-A collaborative full-stack web app from your COP4331 large project work, built primarily with TypeScript, JavaScript, and CSS.
+### 📈 FOMO NOMO
+**Repo:** `FOMO-NOMO/FOMO-NOMO-WEB` *(private)* · COP4331 Large Project
+
+<img src="assets/screenshots/fomo-nomo.jpg" width="640" alt="FOMO NOMO feed — a social app showing an event post with tags, capacity, and RSVP controls" />
+
+*Fear Of Missing Out? No More!* — a social app **designed by students, for students** to encourage face-to-face interaction on the UCF campus. Students post spontaneous meetups, study sessions, and events, then RSVP and coordinate in one place.
+
+- **Accounts** with email verification and password reset (JWT auth, nodemailer)
+- **Onboarding interest survey** that powers recommended student groups
+- **Event feed** — posts carry title, description, tags (Study / Casual / Athletics / Opportunity / Event), and capacity, with "I'm going" RSVPs and comments
+- **Groups** browser backed by UCF RSO data, **profiles**, and **peer-to-peer messaging**
+
+**Stack:** React + Vite + TypeScript · Node.js + Express · MongoDB · JWT
 
 ---
 
