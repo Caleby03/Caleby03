@@ -32,8 +32,11 @@
 ### Frameworks & Runtime
 <img src="https://skillicons.dev/icons?i=react,nodejs,express,nextjs" />
 
-### Data & Tools
-<img src="https://skillicons.dev/icons?i=mysql,mongodb,git,github,vscode,linux,docker" />
+### Cloud, Deployment & Data
+<img src="https://skillicons.dev/icons?i=cloudflare,vercel,aws,gcp,supabase,mysql,mongodb" />
+
+### Tools
+<img src="https://skillicons.dev/icons?i=git,github,vscode,linux,docker" />
 
 </div>
 
@@ -80,6 +83,26 @@ Web-focused project highlighting practical implementation and frontend structure
 ### 📊 Trading Data Project
 **Repo:** [Caleby03/Trading_Data_Project](https://github.com/Caleby03/Trading_Data_Project)  
 Personal project for processing CSV trade logs and producing useful statistics with systems-level programming.
+
+---
+
+## 🖼️ Project Snapshots
+
+> Quick visual previews from each repository landing page.
+
+[![Intelligent-Browser-Agents](https://opengraph.githubassets.com/1/Caleby03/Intelligent-Browser-Agents)](https://github.com/Caleby03/Intelligent-Browser-Agents)
+
+[![HarmonyHouseWebapp](https://opengraph.githubassets.com/1/Caleby03/HarmonyHouseWebapp)](https://github.com/Caleby03/HarmonyHouseWebapp)
+
+[![FOMO-NOMO-WEB](https://opengraph.githubassets.com/1/FOMO-NOMO/FOMO-NOMO-WEB)](https://github.com/FOMO-NOMO/FOMO-NOMO-WEB)
+
+[![Large_Project_COP4331](https://opengraph.githubassets.com/1/Caleby03/Large_Project_COP4331)](https://github.com/Caleby03/Large_Project_COP4331)
+
+[![Small_Project_COP4331](https://opengraph.githubassets.com/1/Caleby03/Small_Project_COP4331)](https://github.com/Caleby03/Small_Project_COP4331)
+
+[![edgekit](https://opengraph.githubassets.com/1/Caleby03/edgekit)](https://github.com/Caleby03/edgekit)
+
+[![Trading_Data_Project](https://opengraph.githubassets.com/1/Caleby03/Trading_Data_Project)](https://github.com/Caleby03/Trading_Data_Project)
 
 ---
 
