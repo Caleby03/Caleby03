@@ -63,25 +63,6 @@ My software engineering & technology consulting practice. I work directly with f
 
 ---
 
-### 🤖 Intelligent Browser Agents
-**Repo:** [Caleby03/Intelligent-Browser-Agents](https://github.com/Caleby03/Intelligent-Browser-Agents) · UCF Senior Design (Team L07)
-
-<img src="assets/screenshots/intelligent-browser-agents.png" width="640" alt="Intelligent Browser Agents — Live Agent View streaming a browser session in real time while the agent reasons through a task" />
-
-A platform that turns natural-language instructions into real actions performed on a live browser session. Users delegate repetitive digital chores — filling forms, navigating dashboards, downloading files — to an agent that reads the page, plans, and executes visually and safely, with the whole run streamed back to the UI in real time.
-
-- **LLM-driven agent runtime** built on **LangGraph** — an orchestrator → executor → verifier → fallback/interaction loop
-- **Playwright** browser automation with ARIA-oriented DOM extraction and a modular action layer (navigate, click, type, search, scroll, press_key, wait, extract_content)
-- **Human-in-the-loop (HITL):** the agent pauses to ask for clarifications, approvals, or credentials mid-run
-- Live browser frames, logs, and agent reasoning streamed to the frontend over **WebSockets**
-- Full account system + encrypted storage of reusable credentials and profile data for automation contexts
-
-**Stack:** React + Vite · FastAPI · LangGraph · Playwright · PostgreSQL · WebSockets · AWS (LightSail/EC2)
-
-**Demo Video:** [Watch on YouTube](https://youtu.be/CmKoODnEdDQ?si=L1nCML-f8zLrPcDL) · **Showcase:** [UCF Senior Design page](https://www.cecs.ucf.edu/SeniorDesignShowcase/team/intelligent-browser-agents/)
-
----
-
 ### 🏠 Harmony House NC
 **Repo:** `Caleby03/HarmonyHouseWebapp` *(private)*
 
@@ -98,19 +79,22 @@ A direct-booking and calendar-sync platform for **Harmony House NC**, a short-te
 
 ---
 
-### 📈 FOMO NOMO
-**Repo:** `FOMO-NOMO/FOMO-NOMO-WEB` *(private)* · COP4331 Large Project
+### 🤖 Intelligent Browser Agents
+**Repo:** [Caleby03/Intelligent-Browser-Agents](https://github.com/Caleby03/Intelligent-Browser-Agents) · UCF Senior Design (Team L07)
 
-<img src="assets/screenshots/fomo-nomo.jpg" width="640" alt="FOMO NOMO feed — a social app showing an event post with tags, capacity, and RSVP controls" />
+<img src="assets/screenshots/intelligent-browser-agents.png" width="640" alt="Intelligent Browser Agents — Live Agent View streaming a browser session in real time while the agent reasons through a task" />
 
-*Fear Of Missing Out? No More!* — a social app **designed by students, for students** to encourage face-to-face interaction on the UCF campus. Students post spontaneous meetups, study sessions, and events, then RSVP and coordinate in one place.
+A platform that turns natural-language instructions into real actions performed on a live browser session. Users delegate repetitive digital chores — filling forms, navigating dashboards, downloading files — to an agent that reads the page, plans, and executes visually and safely, with the whole run streamed back to the UI in real time.
 
-- **Accounts** with email verification and password reset (JWT auth, nodemailer)
-- **Onboarding interest survey** that powers recommended student groups
-- **Event feed** — posts carry title, description, tags (Study / Casual / Athletics / Opportunity / Event), and capacity, with "I'm going" RSVPs and comments
-- **Groups** browser backed by UCF RSO data, **profiles**, and **peer-to-peer messaging**
+- **LLM-driven agent runtime** built on **LangGraph** — an orchestrator → executor → verifier → fallback/interaction loop
+- **Playwright** browser automation with ARIA-oriented DOM extraction and a modular action layer (navigate, click, type, search, scroll, press_key, wait, extract_content)
+- **Human-in-the-loop (HITL):** the agent pauses to ask for clarifications, approvals, or credentials mid-run
+- Live browser frames, logs, and agent reasoning streamed to the frontend over **WebSockets**
+- Full account system + encrypted storage of reusable credentials and profile data for automation contexts
 
-**Stack:** React + Vite + TypeScript · Node.js + Express · MongoDB · JWT
+**Stack:** React + Vite · FastAPI · LangGraph · Playwright · PostgreSQL · WebSockets · AWS (LightSail/EC2)
+
+**Demo Video:** [Watch on YouTube](https://youtu.be/CmKoODnEdDQ?si=L1nCML-f8zLrPcDL) · **Showcase:** [UCF Senior Design page](https://www.cecs.ucf.edu/SeniorDesignShowcase/team/intelligent-browser-agents/)
 
 ---
 
