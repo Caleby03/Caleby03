@@ -65,18 +65,6 @@ A collaborative full-stack web app from your COP4331 large project work, built p
 
 ---
 
-### 🛠️ Large Project (COP4331)
-**Repo:** [Caleby03/Large_Project_COP4331](https://github.com/Caleby03/Large_Project_COP4331)  
-A large-scale course project showcasing team-based execution and end-to-end web product development.
-
----
-
-### 📌 Small Project (COP4331)
-**Repo:** [Caleby03/Small_Project_COP4331](https://github.com/Caleby03/Small_Project_COP4331)  
-A foundational web project focused on software process, structure, and early full-stack implementation.
-
----
-
 ## 📊 GitHub Analytics
 
 <div align="center">
