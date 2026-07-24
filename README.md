@@ -48,7 +48,8 @@
 **Repo:** [Caleby03/Intelligent-Browser-Agents](https://github.com/Caleby03/Intelligent-Browser-Agents)  
 This senior design project focuses on autonomous agents that browse and scrape the web to automate repetitive browser tasks.
 
-[![Intelligent-Browser-Agents Snapshot](https://opengraph.githubassets.com/1/Caleby03/Intelligent-Browser-Agents)](https://github.com/Caleby03/Intelligent-Browser-Agents)
+**Demo Video:** [Watch on YouTube](https://youtu.be/CmKoODnEdDQ?si=L1nCML-f8zLrPcDL)  
+**UCF Senior Design Showcase:** [View Project Page](https://www.cecs.ucf.edu/SeniorDesignShowcase/team/intelligent-browser-agents/)
 
 ---
 
@@ -56,15 +57,11 @@ This senior design project focuses on autonomous agents that browse and scrape t
 **Repo:** `Caleby03/HarmonyHouseWebapp`  
 A TypeScript-heavy full-stack web app that combines modern frontend workflows with Python-backed logic.
 
-[![HarmonyHouseWebapp Snapshot](https://opengraph.githubassets.com/1/Caleby03/HarmonyHouseWebapp)](https://github.com/Caleby03/HarmonyHouseWebapp)
-
 ---
 
 ### 📈 FOMO-NOMO Web
 **Repo:** `FOMO-NOMO/FOMO-NOMO-WEB`  
 A collaborative full-stack web app from your COP4331 large project work, built primarily with TypeScript, JavaScript, and CSS.
-
-[![FOMO-NOMO-WEB Snapshot](https://opengraph.githubassets.com/1/FOMO-NOMO/FOMO-NOMO-WEB)](https://github.com/FOMO-NOMO/FOMO-NOMO-WEB)
 
 ---
 
@@ -72,15 +69,11 @@ A collaborative full-stack web app from your COP4331 large project work, built p
 **Repo:** [Caleby03/Large_Project_COP4331](https://github.com/Caleby03/Large_Project_COP4331)  
 A large-scale course project showcasing team-based execution and end-to-end web product development.
 
-[![Large_Project_COP4331 Snapshot](https://opengraph.githubassets.com/1/Caleby03/Large_Project_COP4331)](https://github.com/Caleby03/Large_Project_COP4331)
-
 ---
 
 ### 📌 Small Project (COP4331)
 **Repo:** [Caleby03/Small_Project_COP4331](https://github.com/Caleby03/Small_Project_COP4331)  
 A foundational web project focused on software process, structure, and early full-stack implementation.
-
-[![Small_Project_COP4331 Snapshot](https://opengraph.githubassets.com/1/Caleby03/Small_Project_COP4331)](https://github.com/Caleby03/Small_Project_COP4331)
 
 ---
 
