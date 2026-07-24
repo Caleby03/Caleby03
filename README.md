@@ -27,7 +27,7 @@
 <div align="center">
 
 ### Languages
-<img src="https://skillicons.dev/icons?i=ts,js,html,css,c,python,java,cpp" />
+<img src="https://skillicons.dev/icons?i=python,ts,js,html,css,php,c" />
 
 ### Frameworks & Runtime
 <img src="https://skillicons.dev/icons?i=react,nodejs,express,nextjs" />
@@ -46,63 +46,41 @@
 
 ### 🤖 Intelligent Browser Agents
 **Repo:** [Caleby03/Intelligent-Browser-Agents](https://github.com/Caleby03/Intelligent-Browser-Agents)  
-Senior design project centered on autonomous agents that can browse and scrape the web, with a focus on intelligent workflow design and practical automation.
+This senior design project focuses on autonomous agents that browse and scrape the web to automate repetitive browser tasks.
+
+[![Intelligent-Browser-Agents Snapshot](https://opengraph.githubassets.com/1/Caleby03/Intelligent-Browser-Agents)](https://github.com/Caleby03/Intelligent-Browser-Agents)
 
 ---
 
 ### 🏠 Harmony House Web App
 **Repo:** `Caleby03/HarmonyHouseWebapp`  
-A full-stack web application project demonstrating modern web development workflows and TypeScript-based implementation.
+A TypeScript-heavy full-stack web app that combines modern frontend workflows with Python-backed logic.
+
+[![HarmonyHouseWebapp Snapshot](https://opengraph.githubassets.com/1/Caleby03/HarmonyHouseWebapp)](https://github.com/Caleby03/HarmonyHouseWebapp)
 
 ---
 
 ### 📈 FOMO-NOMO Web
 **Repo:** `FOMO-NOMO/FOMO-NOMO-WEB`  
-Large project application built primarily with TypeScript/JavaScript/CSS, emphasizing collaboration and end-to-end product development.
+A collaborative full-stack web app from your COP4331 large project work, built primarily with TypeScript, JavaScript, and CSS.
+
+[![FOMO-NOMO-WEB Snapshot](https://opengraph.githubassets.com/1/FOMO-NOMO/FOMO-NOMO-WEB)](https://github.com/FOMO-NOMO/FOMO-NOMO-WEB)
 
 ---
 
 ### 🛠️ Large Project (COP4331)
 **Repo:** [Caleby03/Large_Project_COP4331](https://github.com/Caleby03/Large_Project_COP4331)  
-Large-scale course project showcasing planning, team execution, and complete feature delivery.
+A large-scale course project showcasing team-based execution and end-to-end web product development.
+
+[![Large_Project_COP4331 Snapshot](https://opengraph.githubassets.com/1/Caleby03/Large_Project_COP4331)](https://github.com/Caleby03/Large_Project_COP4331)
 
 ---
 
 ### 📌 Small Project (COP4331)
 **Repo:** [Caleby03/Small_Project_COP4331](https://github.com/Caleby03/Small_Project_COP4331)  
-Foundational project focused on software process and object-oriented development practices.
+A foundational web project focused on software process, structure, and early full-stack implementation.
 
----
-
-### ⚙️ edgekit
-**Repo:** [Caleby03/edgekit](https://github.com/Caleby03/edgekit)  
-Web-focused project highlighting practical implementation and frontend structure.
-
----
-
-### 📊 Trading Data Project
-**Repo:** [Caleby03/Trading_Data_Project](https://github.com/Caleby03/Trading_Data_Project)  
-Personal project for processing CSV trade logs and producing useful statistics with systems-level programming.
-
----
-
-## 🖼️ Project Snapshots
-
-> Quick visual previews from each repository landing page.
-
-[![Intelligent-Browser-Agents](https://opengraph.githubassets.com/1/Caleby03/Intelligent-Browser-Agents)](https://github.com/Caleby03/Intelligent-Browser-Agents)
-
-[![HarmonyHouseWebapp](https://opengraph.githubassets.com/1/Caleby03/HarmonyHouseWebapp)](https://github.com/Caleby03/HarmonyHouseWebapp)
-
-[![FOMO-NOMO-WEB](https://opengraph.githubassets.com/1/FOMO-NOMO/FOMO-NOMO-WEB)](https://github.com/FOMO-NOMO/FOMO-NOMO-WEB)
-
-[![Large_Project_COP4331](https://opengraph.githubassets.com/1/Caleby03/Large_Project_COP4331)](https://github.com/Caleby03/Large_Project_COP4331)
-
-[![Small_Project_COP4331](https://opengraph.githubassets.com/1/Caleby03/Small_Project_COP4331)](https://github.com/Caleby03/Small_Project_COP4331)
-
-[![edgekit](https://opengraph.githubassets.com/1/Caleby03/edgekit)](https://github.com/Caleby03/edgekit)
-
-[![Trading_Data_Project](https://opengraph.githubassets.com/1/Caleby03/Trading_Data_Project)](https://github.com/Caleby03/Trading_Data_Project)
+[![Small_Project_COP4331 Snapshot](https://opengraph.githubassets.com/1/Caleby03/Small_Project_COP4331)](https://github.com/Caleby03/Small_Project_COP4331)
 
 ---
 
@@ -110,30 +88,16 @@ Personal project for processing CSV trade logs and producing useful statistics w
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Caleby03&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Caleby03&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Caleby03&show_icons=true&theme=transparent&hide_border=true&cache_seconds=1800" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Caleby03&layout=compact&theme=transparent&hide_border=true&langs_count=8&cache_seconds=1800" />
 <br/>
-<img height="170" src="https://streak-stats.demolab.com?user=Caleby03&theme=tokyonight&hide_border=true" />
+<img height="170" src="https://streak-stats.demolab.com?user=Caleby03&theme=transparent&hide_border=true" />
 
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Caleby03&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" />
-</div>
-
----
-
-## 📈 Contribution Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Caleby03&theme=tokyo-night&hide_border=true" />
-</div>
-
----
+## 🔎 Live Profile Details
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Caleby03&style=for-the-badge&color=2563EB" alt="profile views" />
