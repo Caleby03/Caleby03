@@ -45,6 +45,21 @@
 
 ## 🌟 Featured Projects
 
+### 🖧 Three-Node Homelab — Infrastructure as Config
+**Live:** [caleby03.github.io/Homelab-Portfolio](https://caleby03.github.io/Homelab-Portfolio/) · **Repo:** [Caleby03/Homelab-Portfolio](https://github.com/Caleby03/Homelab-Portfolio)
+
+A self-hosted homelab run as infrastructure-as-config, built around a deliberate split of responsibilities: an always-on mini PC for stateful services, a Windows workstation used as burst GPU capacity, and a Raspberry Pi as an independent watchdog. Every node is assigned work it is actually suited to, every container is capacity-bounded, and the monitoring is designed around the assumption that any node — including the one doing the monitoring — will eventually fail.
+
+- **Containerized service stacks** split by *lifecycle and failure domain* rather than by subject matter, so alerting can't be taken down by the same command that takes down the thing it watches
+- **GitOps deployment** — stacks deploy straight from a git repo and reconcile on their own, so a commit is the deploy
+- **Zero-trust networking** over a WireGuard mesh: no port forwarding, no public ingress, access authenticated per device rather than per network
+- **Found and closed a live security gap** — an audit revealed published container ports reachable from the LAN, because Docker inserts its own iptables rules ahead of the chain the host firewall manages, so a `deny incoming` policy silently did not apply. Moved enforcement into the `DOCKER-USER` chain and verified it across reboot, daemon restart, and from an off-network host
+- **Metrics and dashboards** with recording rules pre-computing dashboard values, plus **Architecture Decision Records** written at the time each choice was made rather than reconstructed afterward
+
+**Stack:** Docker · Docker Compose · Portainer · Prometheus · Grafana · Tailscale · iptables/UFW · PostgreSQL · Redis · Ubuntu
+
+---
+
 ### 🏢 Arcanet Consulting
 **Site:** [arcanettechnology.com](https://arcanettechnology.com)
 
