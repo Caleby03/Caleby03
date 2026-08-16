@@ -48,6 +48,10 @@
 ### 🖧 Three-Node Homelab — Infrastructure as Config
 **Live:** [caleby03.github.io/Homelab-Portfolio](https://caleby03.github.io/Homelab-Portfolio/) · **Repo:** [Caleby03/Homelab-Portfolio](https://github.com/Caleby03/Homelab-Portfolio)
 
+<a href="https://caleby03.github.io/Homelab-Portfolio/">
+  <img src="assets/screenshots/homelab.jpg" width="640" alt="Homelab portfolio — architecture, operational practice and build status rendered as a monitoring dashboard" />
+</a>
+
 A self-hosted homelab run as infrastructure-as-config, built around a deliberate split of responsibilities: an always-on mini PC for stateful services, a Windows workstation used as burst GPU capacity, and a Raspberry Pi as an independent watchdog. Every node is assigned work it is actually suited to, every container is capacity-bounded, and the monitoring is designed around the assumption that any node — including the one doing the monitoring — will eventually fail.
 
 - **Containerized service stacks** split by *lifecycle and failure domain* rather than by subject matter, so alerting can't be taken down by the same command that takes down the thing it watches
