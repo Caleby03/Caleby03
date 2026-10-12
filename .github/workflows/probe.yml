@@ -1,0 +1,44 @@
+# Temporary: checks which preview-image sources can see arcanettechnology.com.
+name: Probe preview sources
+
+on:
+  push:
+    branches: [claude/self-hosted-metrics]
+    paths: [.github/workflows/probe.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe
+        run: |
+          mkdir -p probe && cd probe
+          UA="Mozilla/5.0 (compatible; Twitterbot/1.0)"
+          get() { # name url
+            code=$(curl -sSL -A "$UA" -m 90 -o "$1" -w "%{http_code} %{content_type} %{size_download}" "$2" || echo "curl-failed")
+            echo "$1 | $code | $2" >> log.txt
+          }
+          get home.html https://arcanettechnology.com/
+          grep -oiE '<meta[^>]+(og:image|twitter:image)[^>]*>' home.html >> log.txt || echo "no og/twitter image tags" >> log.txt
+          grep -oiE '<title>[^<]*' home.html >> log.txt || true
+          for p in og.png og.jpg og-image.png og-image.jpg opengraph-image opengraph-image.png social.png preview.png; do
+            get "site-$p" "https://arcanettechnology.com/$p"
+          done
+          MS="https://s.wordpress.com/mshots/v1/https%3A%2F%2Farcanettechnology.com%2F?w=1280&h=651"
+          get mshots-1.jpg "$MS"; sleep 45; get mshots.jpg "$MS"
+          get microlink.png "https://api.microlink.io/?url=https%3A%2F%2Farcanettechnology.com&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=651"
+          get thumio.png "https://image.thum.io/get/width/1280/crop/651/https://arcanettechnology.com"
+          file * >> log.txt
+          cat log.txt
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add probe
+          git commit -m "chore: preview probe results [skip ci]"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
