@@ -1,0 +1,74 @@
+# Refreshes the Arcanet website screenshot used in the README.
+# arcanettechnology.com challenges headless browsers on GitHub's runners, so
+# the capture comes from a screenshot service (Microlink in dark mode, falling back to
+# WordPress mShots) and is committed only when it is a real image.
+name: Screenshots
+
+on:
+  schedule:
+    - cron: "41 9 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/screenshots.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-assets
+  cancel-in-progress: false
+
+jobs:
+  arcanet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capture arcanettechnology.com
+        run: |
+          pip install --quiet pillow==10.4.0
+          MICROLINK="https://api.microlink.io/?url=https%3A%2F%2Farcanettechnology.com&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=651&viewport.deviceScaleFactor=2&colorScheme=dark&waitForTimeout=3000"
+          MSHOTS="https://s.wordpress.com/mshots/v1/https%3A%2F%2Farcanettechnology.com%2F?w=1280&h=651"
+          ok=""
+          for i in 1 2 3; do
+            if curl -sSfL -m 120 -o raw "$MICROLINK" && python -c "from PIL import Image; im=Image.open('raw'); assert im.format in ('PNG','JPEG') and im.width >= 1280" 2>/dev/null; then
+              ok=microlink; break
+            fi
+            sleep 30
+          done
+          if [ -z "$ok" ]; then
+            # mShots returns a placeholder GIF until the capture is ready.
+            for i in 1 2 3 4 5 6; do
+              curl -sSfL -m 60 -o raw "$MSHOTS" || true
+              if python -c "from PIL import Image; im=Image.open('raw'); assert im.format == 'JPEG' and im.width == 1280" 2>/dev/null; then ok=mshots; break; fi
+              sleep 30
+            done
+          fi
+          [ -n "$ok" ] || { echo "No screenshot service returned a usable image"; exit 1; }
+          echo "Captured via $ok"
+          python - <<'EOF'
+          from PIL import Image
+          im = Image.open("raw").convert("RGB")
+          im = im.resize((1280, round(im.height * 1280 / im.width)), Image.LANCZOS)
+          im.save("assets/screenshots/arcanet.jpg", quality=88, optimize=True, progressive=True)
+          EOF
+          rm raw
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add assets/screenshots/arcanet.jpg
+          if git diff --cached --quiet; then
+            echo "Screenshot unchanged"
+            exit 0
+          fi
+          git commit -m "chore: refresh arcanet screenshot [skip ci]"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
