@@ -1,6 +1,6 @@
 # Refreshes the Arcanet website screenshot used in the README.
 # arcanettechnology.com challenges headless browsers on GitHub's runners, so
-# the capture comes from a screenshot service (Microlink, falling back to
+# the capture comes from a screenshot service (Microlink in dark mode, falling back to
 # WordPress mShots) and is committed only when it is a real image.
 name: Screenshots
 
@@ -33,7 +33,7 @@ jobs:
       - name: Capture arcanettechnology.com
         run: |
           pip install --quiet pillow==10.4.0
-          MICROLINK="https://api.microlink.io/?url=https%3A%2F%2Farcanettechnology.com&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=651&viewport.deviceScaleFactor=2&waitForTimeout=3000"
+          MICROLINK="https://api.microlink.io/?url=https%3A%2F%2Farcanettechnology.com&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=651&viewport.deviceScaleFactor=2&colorScheme=dark&waitForTimeout=3000"
           MSHOTS="https://s.wordpress.com/mshots/v1/https%3A%2F%2Farcanettechnology.com%2F?w=1280&h=651"
           ok=""
           if curl -sSfL -m 120 -o raw "$MICROLINK" && python -c "from PIL import Image; im=Image.open('raw'); assert im.format in ('PNG','JPEG') and im.width >= 1280" 2>/dev/null; then
