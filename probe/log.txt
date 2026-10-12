@@ -1,0 +1,29 @@
+home.html | 403 text/html; charset=UTF-8 5337 | https://arcanettechnology.com/
+no og/twitter image tags
+<title>Just a moment...
+site-og.png | 404  0 | https://arcanettechnology.com/og.png
+site-og.jpg | 404  0 | https://arcanettechnology.com/og.jpg
+site-og-image.png | 404  0 | https://arcanettechnology.com/og-image.png
+site-og-image.jpg | 404  0 | https://arcanettechnology.com/og-image.jpg
+site-opengraph-image | 403 text/html; charset=UTF-8 5403 | https://arcanettechnology.com/opengraph-image
+site-opengraph-image.png | 404  0 | https://arcanettechnology.com/opengraph-image.png
+site-social.png | 404  0 | https://arcanettechnology.com/social.png
+site-preview.png | 404  0 | https://arcanettechnology.com/preview.png
+mshots-1.jpg | 200 image/gif 8737 | https://s.wordpress.com/mshots/v1/https%3A%2F%2Farcanettechnology.com%2F?w=1280&h=651
+mshots.jpg | 200 image/jpeg 142183 | https://s.wordpress.com/mshots/v1/https%3A%2F%2Farcanettechnology.com%2F?w=1280&h=651
+microlink.png | 200 image/png 932667 | https://api.microlink.io/?url=https%3A%2F%2Farcanettechnology.com&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=651
+thumio.png | 200 image/gif 627973 | https://image.thum.io/get/width/1280/crop/651/https://arcanettechnology.com
+home.html:                HTML document, ASCII text, with very long lines (5337), with no line terminators
+log.txt:                  HTML document, ASCII text
+microlink.png:            PNG image data, 2560 x 1302, 8-bit/color RGB, non-interlaced
+mshots-1.jpg:             GIF image data, version 89a, 400 x 300
+mshots.jpg:               JPEG image data, JFIF standard 1.01, resolution (DPI), density 96x96, segment length 16, comment: "CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 95", baseline, precision 8, 1280x651, components 3
+site-og-image.jpg:        empty
+site-og-image.png:        empty
+site-og.jpg:              empty
+site-og.png:              empty
+site-opengraph-image:     HTML document, ASCII text, with very long lines (5403), with no line terminators
+site-opengraph-image.png: empty
+site-preview.png:         empty
+site-social.png:          empty
+thumio.png:               GIF image data, version 89a, 1280 x 694
