@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="185" viewBox="0 0 495 185">
+<style>
+  .bg { fill: #ffffff; stroke: #e5e7eb; }
+  .title { font: 600 16px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #2563EB; }
+  .label { font: 400 13px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #4b5563; }
+  .value { font: 700 13px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #111827; }
+  .big { font: 700 26px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #111827; }
+  .sub { font: 400 11px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #6b7280; }
+  .l0 { fill: #ebedf0; } .l1 { fill: #bfdbfe; } .l2 { fill: #60a5fa; } .l3 { fill: #2563eb; } .l4 { fill: #1e3a8a; }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #0d1117; stroke: #30363d; }
+    .title { fill: #58a6ff; }
+    .label { fill: #9ca3af; }
+    .value, .big { fill: #f3f4f6; }
+    .sub { fill: #8b949e; }
+    .l0 { fill: #161b22; } .l1 { fill: #1e3a8a; } .l2 { fill: #2563eb; } .l3 { fill: #60a5fa; } .l4 { fill: #bfdbfe; }
+  }
+</style>
+<rect class="bg" x="0.5" y="0.5" rx="6" width="494" height="184"/><text class="title" x="20" y="32">Caleb Yaghoubi's GitHub Stats</text><text class="label" x="20" y="62">Contributions (last year)</text><text class="value" x="475" y="62" text-anchor="end">3,012</text><text class="label" x="20" y="86">Public repositories</text><text class="value" x="475" y="86" text-anchor="end">7</text><text class="label" x="20" y="110">Stars earned</text><text class="value" x="475" y="110" text-anchor="end">1</text><text class="label" x="20" y="134">Followers</text><text class="value" x="475" y="134" text-anchor="end">1</text><text class="label" x="20" y="158">On GitHub since</text><text class="value" x="475" y="158" text-anchor="end">Jul 2024</text></svg>
