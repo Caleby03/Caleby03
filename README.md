@@ -121,13 +121,13 @@ A platform that turns natural-language instructions into real actions performed 
 
 <div align="center">
 
-<img src="assets/metrics/overview.svg" alt="GitHub activity, community and repository stats, including private contributions" />
+<img src="assets/metrics/overview.svg" alt="GitHub stats: contributions, repositories, stars and followers" />
 <br/>
-<img src="assets/metrics/languages.svg" alt="Most-used languages across public and private repositories" />
+<img src="assets/metrics/languages.svg" alt="Most-used languages across public repositories" />
 <br/>
 <img src="assets/metrics/streak.svg" alt="Contribution calendar with current and longest streak" />
 
-<sub>Generated twice daily by a GitHub Action · includes private repositories</sub>
+<sub>Generated twice daily by a GitHub Action · contribution counts include private work; languages reflect public repos</sub>
 
 </div>
 

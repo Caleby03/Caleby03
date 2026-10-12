@@ -1,6 +1,5 @@
 # Generates the README's GitHub analytics as SVGs committed to this repo.
-# Uses a personal access token (METRICS_TOKEN) so private repositories and
-# private contributions are counted, unlike the shared public stat services.
+# Uses only the built-in GITHUB_TOKEN: no personal access token is stored.
 name: Metrics
 
 on:
@@ -11,6 +10,7 @@ on:
     branches: [main]
     paths:
       - .github/workflows/metrics.yml
+      - .github/scripts/metrics.py
 
 permissions:
   contents: write
@@ -23,47 +23,26 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Overview
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: assets/metrics/overview.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_message: "chore: update metrics [skip ci]"
-          user: Caleby03
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: America/New_York
-          repositories_affiliations: owner
+      - uses: actions/checkout@v4
 
-      - name: Languages
-        uses: lowlighter/metrics@v3.34
+      - uses: actions/setup-python@v5
         with:
-          filename: assets/metrics/languages.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_message: "chore: update metrics [skip ci]"
-          user: Caleby03
-          template: classic
-          base: ""
-          config_timezone: America/New_York
-          repositories_affiliations: owner
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          plugin_languages_limit: 8
-          plugin_languages_ignored: html, css, scss
+          python-version: "3.12"
 
-      - name: Contribution calendar & streak
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: assets/metrics/streak.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_message: "chore: update metrics [skip ci]"
-          user: Caleby03
-          template: classic
-          base: ""
-          config_timezone: America/New_York
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+      - name: Generate cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/metrics.py Caleby03 assets/metrics
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add assets/metrics
+          if git diff --cached --quiet; then
+            echo "Metrics unchanged"
+            exit 0
+          fi
+          git commit -m "chore: update metrics [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
