@@ -121,10 +121,13 @@ A platform that turns natural-language instructions into real actions performed 
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Caleby03&show_icons=true&theme=transparent&hide_border=true&cache_seconds=1800" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Caleby03&layout=compact&theme=transparent&hide_border=true&langs_count=8&cache_seconds=1800" />
+<img src="assets/metrics/overview.svg" alt="GitHub activity, community and repository stats, including private contributions" />
 <br/>
-<img height="170" src="https://streak-stats.demolab.com?user=Caleby03&theme=transparent&hide_border=true" />
+<img src="assets/metrics/languages.svg" alt="Most-used languages across public and private repositories" />
+<br/>
+<img src="assets/metrics/streak.svg" alt="Contribution calendar with current and longest streak" />
+
+<sub>Generated twice daily by a GitHub Action · includes private repositories</sub>
 
 </div>
 

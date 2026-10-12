@@ -1,0 +1,69 @@
+# Generates the README's GitHub analytics as SVGs committed to this repo.
+# Uses a personal access token (METRICS_TOKEN) so private repositories and
+# private contributions are counted, unlike the shared public stat services.
+name: Metrics
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/metrics.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-assets
+  cancel-in-progress: false
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Overview
+        uses: lowlighter/metrics@v3.34
+        with:
+          filename: assets/metrics/overview.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_message: "chore: update metrics [skip ci]"
+          user: Caleby03
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: America/New_York
+          repositories_affiliations: owner
+
+      - name: Languages
+        uses: lowlighter/metrics@v3.34
+        with:
+          filename: assets/metrics/languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_message: "chore: update metrics [skip ci]"
+          user: Caleby03
+          template: classic
+          base: ""
+          config_timezone: America/New_York
+          repositories_affiliations: owner
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_ignored: html, css, scss
+
+      - name: Contribution calendar & streak
+        uses: lowlighter/metrics@v3.34
+        with:
+          filename: assets/metrics/streak.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_message: "chore: update metrics [skip ci]"
+          user: Caleby03
+          template: classic
+          base: ""
+          config_timezone: America/New_York
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
