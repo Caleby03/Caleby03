@@ -9,7 +9,7 @@ on:
     - cron: "41 9 * * 1"
   workflow_dispatch:
   push:
-    branches: [main, claude/self-hosted-metrics]
+    branches: [main]
     paths:
       - .github/workflows/screenshots.yml
 
@@ -36,9 +36,13 @@ jobs:
           MICROLINK="https://api.microlink.io/?url=https%3A%2F%2Farcanettechnology.com&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=651&viewport.deviceScaleFactor=2&colorScheme=dark&waitForTimeout=3000"
           MSHOTS="https://s.wordpress.com/mshots/v1/https%3A%2F%2Farcanettechnology.com%2F?w=1280&h=651"
           ok=""
-          if curl -sSfL -m 120 -o raw "$MICROLINK" && python -c "from PIL import Image; im=Image.open('raw'); assert im.format in ('PNG','JPEG') and im.width >= 1280" 2>/dev/null; then
-            ok=microlink
-          else
+          for i in 1 2 3; do
+            if curl -sSfL -m 120 -o raw "$MICROLINK" && python -c "from PIL import Image; im=Image.open('raw'); assert im.format in ('PNG','JPEG') and im.width >= 1280" 2>/dev/null; then
+              ok=microlink; break
+            fi
+            sleep 30
+          done
+          if [ -z "$ok" ]; then
             # mShots returns a placeholder GIF until the capture is ready.
             for i in 1 2 3 4 5 6; do
               curl -sSfL -m 60 -o raw "$MSHOTS" || true
