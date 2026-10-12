@@ -7,7 +7,7 @@ on:
     - cron: "17 */12 * * *"
   workflow_dispatch:
   push:
-    branches: [main, claude/self-hosted-metrics]
+    branches: [main]
     paths:
       - .github/workflows/metrics.yml
       - .github/scripts/metrics.py

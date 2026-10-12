@@ -1,15 +1,10 @@
 # Refreshes the Arcanet website screenshot used in the README.
 name: Screenshots
 
+# Manual only: arcanettechnology.com sits behind a Cloudflare bot challenge,
+# so this succeeds only once the site lets the runner through.
 on:
-  schedule:
-    - cron: "41 9 * * 1"
   workflow_dispatch:
-  push:
-    branches: [main, claude/self-hosted-metrics]
-    paths:
-      - .github/workflows/screenshots.yml
-      - .github/scripts/screenshot.mjs
 
 permissions:
   contents: write
